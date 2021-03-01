@@ -33,12 +33,12 @@ Tweepy (Twitter API) does not allow free access to tweets more than 7 days old. 
 
 ### Ticker_count 
 
-This is my quick and dirty version of counting the number of mentions of a ticker from the data that we stored. You have to run this code by specifying the time frame in which you want the analysis to be done. Both the twitter and reddit counts have been seperated as lots of people wanted the information to be seperated. Feel free to combine them into one program. Do this for two-three months and you will have a good dataset to see how the mentions rise and fall based on the hype 
+This is my quick and dirty version of counting the number of mentions of a ticker from the data that we stored. You have to run this code by specifying the time frame in which you want the analysis to be done. Both the twitter and reddit counts have been seperated as lots of people wanted the information to be seperated. Feel free to combine them into one program. Do this for two-three months and you will have a good dataset to see how the mentions rise and fall based on the hype. Currently, I am running the code everyday at a fixed time and adding it to my excel tracker. If you have a better method, please feel free to suggest! 
 
 
 ### QC and final thoughts 
 Obviously, just getting the number of mentions and their increase is just the first step. Two things that I am not sharing in the public repo is my own propiratary vadersentiment model (for finance related terms) and bot/spam detection. Please take a random sample and check whether the interest is genuine or whether the stocks are being pushed by bots (check for repeated mentions, very high comment/tweet volume from one user etc.) Also do your own extensive research before investing on any stocks. 
 
 
-_Disclaimer: I am not a financial advisor. There are significant risks associated with investing in small-cap companies. Please do your own extensive research before investing in any stock._
+_Disclaimer: I am not a financial advisor. There are significant risks associated with investing in equities. Please do your own extensive research before investing in any stock._
 
