@@ -145,7 +145,7 @@ def update_hist_graph_scatter(sentiment_term):
     try:
         if sentiment_term:
             df1 = pd.read_sql("select * from twitter_data.twitter_data_sentiment where tweet like '%?%' and date_time >  ADDDATE(date_time, -7)", mydb, params=(var1+'*',))
-            df2 = pd.read_sql("select * from twitter_data.twitter_data_sentiment where tweet like '%?%' and date_time >  ADDDATE(date_time, -7)", mydb, params=(var1+'*',)) 
+            df2 = pd.read_sql("select * from reddit_data.reddit_data_sentiment where body like '%?%' and date_time >  ADDDATE(date_time, -7)", mydb, params=(var1+'*',)) 
             df = df1.append(df2)
         df.set_index('date_time', inplace=True)
         init_length = len(df)
